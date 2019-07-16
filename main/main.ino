@@ -12,10 +12,12 @@ byte mode;
 byte firing;
 
 void fire() {
+    digitalWrite(LED_BUILTIN, LOW);
     digitalWrite(MOSFET, HIGH);
     delay(DELAY);
     digitalWrite(MOSFET, LOW);
     delay(DELAY);
+    digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void setup() {
@@ -23,10 +25,10 @@ void setup() {
     pinMode(MOSFET, OUTPUT);
     pinMode(BURST, INPUT);
     pinMode(AUTO, INPUT);
+    digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void loop() {
-    digitalWrite(LED_BUILTIN, HIGH);
     if (digitalRead(BURST)) {
         mode = BURSTMODE;
     } else if (digitalRead(AUTO)) {
