@@ -5,13 +5,18 @@
 #define AUTOMODE 2
 #define BURSTMODE 1
 #define SEMIMODE 0
-#define DELAY 250
+#define DELAY 125
 
 unsigned int count;
 byte mode;
 byte firing;
-unsigned long time;
-unsigned long now;
+
+void fire() {
+    digitalWrite(MOSFET, HIGH);
+    delay(DELAY);
+    digitalWrite(MOSFET, LOW);
+    delay(DELAY);
+}
 
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
@@ -21,7 +26,6 @@ void setup() {
 }
 
 void loop() {
-    now = millis();
     digitalWrite(LED_BUILTIN, HIGH);
     if (digitalRead(BURST)) {
         mode = BURSTMODE;
@@ -30,26 +34,24 @@ void loop() {
     } else {
         mode = SEMIMODE;
     }
+    
     firing = digitalRead(TRIGGER);
     if (firing) {
-        time = millis() + DELAY;
         switch (mode) {
         case SEMIMODE:
-            if (count == 0) {
-                digitalWrite(MOSFET, HIGH);
-            } 
+            if (count==0) {
+                fire();
+                count++;
+            }
             break;
         case BURSTMODE:
-            if (count > 2 && now >= time) {
-                digitalWrite(MOSFET, HIGH);
+            if (count <= 2) {
+                fire();
                 count++;
             }
             break;
         case AUTOMODE:
-            if (now >= time) {
-                digitalWrite(MOSFET, HIGH);
-                count++;
-            }
+            fire();
             break;
         default:
             digitalWrite(MOSFET, LOW);
@@ -57,8 +59,6 @@ void loop() {
         }
     } else {
         count = 0;
-        time = 0;
-        digitalWrite(MOSFET, LOW);
     }
     
 }
