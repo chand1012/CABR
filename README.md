@@ -39,7 +39,10 @@ The CABR is a 3D printed Nerf Computerized Adaptive Bullpup Rifle for full lengt
 # Additional Parts for circuitry
 
 - 1 IRF720 MOSFET [Digikey](https://www.digikey.com/product-detail/en/vishay-siliconix/IRF720/IRF720-ND/11174)
+- 1 1N4148 Diode [Digikey](https://www.digikey.com/product-detail/en/on-semiconductor/1N4148TR/1N4148FSCT-ND/9356376)
+- 1 2N3904 NPN Transistor [Digikey](https://www.digikey.com/product-detail/en/micro-commercial-co/2N3904-AP/2N3904-APTB-ND/950399)
 - 1 R-78E5.0-0.5 Voltage regulator [Digikey](https://www.digikey.com/product-detail/en/recom-power/R-78E5.0-0.5/945-1648-5-ND/2834904)
+- Assorted Resistors
 - 2 10uF 25v capacitors [Digikey](https://www.digikey.com/product-detail/en/wurth-electronics-inc/860010472002/732-8625-1-ND/5728581)
 - 1 3-position switch [Digikey](https://www.digikey.com/product-detail/en/SS-13D16-VG+4+PA/CKN10371-ND/2747181)
 - Arduino Nano [SeeedStudio](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html) [Amazon](https://www.amazon.com/ATmega328P-Microcontroller-Board-Cable-Arduino/dp/B00NLAMS9C/ref=sr_1_9?keywords=Arduino+Nano&qid=1563204523&s=gateway&sr=8-9)
