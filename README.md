@@ -1,25 +1,28 @@
 
-# SABR
+# CABR
 
-The SABR is a 3D printed Nerf SemiAutomatic Bullpup Rifle for full length darts. 
+The CABR is a 3D printed Nerf Computerized Adaptive Bullpup Rifle for full length darts.
 
 # Features
-- Simple design: only 8 printed parts for the blaster
-- Tooless access to the battery compartment, flywheel cage and barrel
-- Dual stage trigger
-- 41.5mm flywheel gap for the integral flywheel cage
-- Full length dart feed guide
-- FTW solenoid pusher
-- Full length picatinny top rail
-- Optional side picatinny rails
-- Integrated sling mounts
+
+- Simple design: only 8 printed parts for the blaster.
+- Toolless access to the battery compartment, flywheel cage and barrel.
+- Dual stage trigger.
+- 41.5mm flywheel gap for the integral flywheel cage.
+- Full length dart feed guide.
+- FTW solenoid pusher.
+- Full length picatinny top rail.
+- Optional side picatinny rails.
+- Integrated sling mounts.
+- Computerized Semi, Burst, and Automatic modes.
+- Battery buzzer for power detection.
 
 # Required Parts
 
 |Part            |Quantity  |Description                                                       |
 |----------------|----------|------------------------------------------------------------------|
 |Flywheel motors |2         |130 or 180 sized motors for flywheels [Purchase Link](https://outofdarts.com/collections/motors-2019/products/ood-kraken-motor) |
-|Flywheels       |2         |Flywheels [Purchase Link](https://www.containmentcrew.com/shop/cc/cc-inf/) |
+|Flywheels       |2         |Flywheels [Purchase Link](https://outofdarts.com/collections/flywheels-cages/products/containment-crew-inferno-flywheels-pair) |
 |FTW Solenoid    |1         |FTW Solenoid for the pusher [Purchase Link](https://www.banggood.com/DC-12V-35mm-Long-Stroke-Push-Pull-Solenoid-Small-Electromagnetic-Electric-Magnet-p-1217063.html?cur_warehouse=CN) |
 |Microswitch              | 2 | For activating the motors and solenoid [Purchase Link](https://outofdarts.com/collections/electronics/products/21a-microswitch-button-clone)                        |
 |Silicone insulated wire  |   | Wiring [Purchase Link](https://www.amazon.com/BNTECHGO-Silicone-Flexible-Strands-Stranded/dp/B01C5CANVG/ref=pd_lpo_sbs_60_t_2?_encoding=UTF8&psc=1&refRID=DZD6XCXG9PDEQ4CW3V4W)                                                        |
@@ -48,6 +51,7 @@ The SABR is a 3D printed Nerf SemiAutomatic Bullpup Rifle for full length darts.
 # Printing Parameters
 
 Prototypes were printed using these parameters:
+
 - PLA
 - .3mm layer height
 - .4mm nozzle
@@ -59,8 +63,9 @@ Prototypes were printed using these parameters:
 [Assembly guide on the repository wiki](https://github.com/chand1012/SABR/wiki/Assembly)
 
 # Contributing
-The project was designed using Fusion 360, under their hobbyist license. 
+
+The project was designed using Fusion 360, under their hobbyist license.
 
 # Attributions
-This project uses the [FTW Solenoid by FlywheelTheWorld](https://www.thingiverse.com/thing:3518739) and the [FTW Solenoid Pusher Head by FlywheelTheWorld]()
 
+This project uses the [FTW Solenoid by FlywheelTheWorld](https://www.thingiverse.com/thing:3518739) and the [FTW Solenoid Pusher Head by FlywheelTheWorld](https://www.thingiverse.com/thing:3307908).
