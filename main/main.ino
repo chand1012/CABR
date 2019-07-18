@@ -1,7 +1,8 @@
-#define TRIGGER 10
-#define BURST 11
-#define AUTO 12
-#define MOSFET 9
+#define READY 4
+#define TRIGGER 3
+#define BURST 2
+#define AUTO 1
+#define MOSFET 0
 #define AUTOMODE 2
 #define BURSTMODE 1
 #define SEMIMODE 0
@@ -12,21 +13,21 @@ byte mode;
 byte firing;
 
 void fire() {
-    digitalWrite(LED_BUILTIN, LOW);
+    digitalWrite(READY, LOW);
     digitalWrite(MOSFET, HIGH);
     delay(DELAY);
     digitalWrite(MOSFET, LOW);
     delay(DELAY);
-    digitalWrite(LED_BUILTIN, HIGH);
+    digitalWrite(READY, HIGH);
 }
 
 void setup() {
-    pinMode(LED_BUILTIN, OUTPUT);
+    pinMode(READY, OUTPUT);
     pinMode(MOSFET, OUTPUT);
     pinMode(TRIGGER, INPUT);
     pinMode(BURST, INPUT);
     pinMode(AUTO, INPUT);
-    digitalWrite(LED_BUILTIN, HIGH);
+    digitalWrite(READY, HIGH);
 }
 
 void loop() {
