@@ -5,7 +5,7 @@
 #define AUTOMODE 2
 #define BURSTMODE 1
 #define SEMIMODE 0
-#define DELAY 125
+#define DELAY 100
 
 unsigned int count;
 byte mode;
@@ -23,6 +23,7 @@ void fire() {
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
     pinMode(MOSFET, OUTPUT);
+    pinMode(TRIGGER, INPUT);
     pinMode(BURST, INPUT);
     pinMode(AUTO, INPUT);
     digitalWrite(LED_BUILTIN, HIGH);
