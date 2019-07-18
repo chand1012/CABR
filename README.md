@@ -45,11 +45,12 @@ The CABR is a 3D printed Nerf Computerized Adaptive Bullpup Rifle for full lengt
 - Assorted Resistors
 - 2 10uF 25v capacitors [Digikey](https://www.digikey.com/product-detail/en/wurth-electronics-inc/860010472002/732-8625-1-ND/5728581)
 - 1 3-position switch [Digikey](https://www.digikey.com/product-detail/en/SS-13D16-VG+4+PA/CKN10371-ND/2747181)
-- Attiny85-20PU
-- 8-pin DIP socket
+- Attiny85-20PU [Digikey](https://www.digikey.com/product-detail/en/microchip-technology/ATTINY85-20PU/ATTINY85-20PU-ND/735469)
+- 8-pin DIP socket [Digikey](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TT/AE9986-ND/821740)
 - Lipo Battery Buzzer [Amazon](https://www.amazon.com/gp/product/B005GJCJOA/ref=ox_sc_act_title_1?smid=AX7ADZ8UGPBYN&psc=1)
 - Lipo Charger [Amazon](https://www.amazon.com/gp/product/B01NB9A36R/ref=ox_sc_act_title_5?smid=AF5VK40LEGWAH&psc=1)
 - Lipo Battery [Amazon](https://www.amazon.com/gp/product/B0072AENKY/ref=ox_sc_act_title_3?smid=A3AR95NHANJAX6&psc=1)
+- An ATTiny programmer (Found [here](https://www.digikey.com/product-detail/en/sparkfun-electronics/PGM-11801/1568-1079-ND/5230948)) or an Arduino Uno (found [here](https://www.amazon.com/Elegoo-EL-CB-001-ATmega328P-ATMEGA16U2-Arduino/dp/B01EWOE0UU/ref=sr_1_9?keywords=arduino&qid=1563473233&s=gateway&sr=8-9))
 
 # Printing Parameters
 
@@ -59,7 +60,7 @@ Prototypes were printed using these parameters:
 - .3mm layer height
 - .4mm nozzle
 - 1.2mm vertical wall thickness
-- No supports
+- No supports (Except for the back of the reciever)
 
 # Assembly
 
