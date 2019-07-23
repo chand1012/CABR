@@ -1,7 +1,7 @@
 #define READY 4
 #define TRIGGER 3
-#define BURST 2
-#define AUTO 1
+#define BURST 1
+#define AUTO 2
 #define MOSFET 0
 #define AUTOMODE 2
 #define BURSTMODE 1
