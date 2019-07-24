@@ -60,7 +60,7 @@ Prototypes were printed using these parameters:
 - .3mm layer height
 - .4mm nozzle
 - 1.2mm vertical wall thickness
-- No supports (Except for the back of the reciever)
+/- No supports (Except for the back of the reciever)
 
 # Assembly
 
