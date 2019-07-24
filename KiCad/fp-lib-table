@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name XT60)(type KiCad)(uri ${KIPRJMOD}/XT60.pretty)(options "")(descr ""))
+)
