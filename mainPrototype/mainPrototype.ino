@@ -1,8 +1,8 @@
-#define READY 4
-#define TRIGGER 3
+#define READY 0
+#define TRIGGER 4
 #define BURST 1
 #define AUTO 2
-#define MOSFET 0
+#define MOSFET 3
 #define AUTOMODE 2
 #define BURSTMODE 1
 #define SEMIMODE 0
