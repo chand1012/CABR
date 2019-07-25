@@ -1,3 +1,4 @@
 gcode/
 .vscode
 build/
+*.zip
