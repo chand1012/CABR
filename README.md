@@ -38,19 +38,21 @@ The CABR (Pronounced KAY-BER) is a 3D printed Nerf Computerized Adaptive Bullpup
 
 # Additional Parts for circuitry
 
-- 1 IRF720 MOSFET [Digikey](https://www.digikey.com/product-detail/en/vishay-siliconix/IRF720/IRF720-ND/11174)
-- 1 1N4148 Diode [Digikey](https://www.digikey.com/product-detail/en/on-semiconductor/1N4148TR/1N4148FSCT-ND/9356376)
-- 1 2N3904 NPN Transistor [Digikey](https://www.digikey.com/product-detail/en/micro-commercial-co/2N3904-AP/2N3904-APTB-ND/950399)
-- 1 R-78E5.0-0.5 Voltage regulator [Digikey](https://www.digikey.com/product-detail/en/recom-power/R-78E5.0-0.5/945-1648-5-ND/2834904)
-- Assorted Resistors
-- 2 10uF 25v capacitors [Digikey](https://www.digikey.com/product-detail/en/wurth-electronics-inc/860010472002/732-8625-1-ND/5728581)
-- 1 3-position switch [Digikey](https://www.digikey.com/product-detail/en/SS-13D16-VG+4+PA/CKN10371-ND/2747181)
-- Attiny85-20PU [Digikey](https://www.digikey.com/product-detail/en/microchip-technology/ATTINY85-20PU/ATTINY85-20PU-ND/735469)
-- 8-pin DIP socket [Digikey](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TT/AE9986-ND/821740)
-- Lipo Battery Buzzer [Amazon](https://www.amazon.com/gp/product/B005GJCJOA/ref=ox_sc_act_title_1?smid=AX7ADZ8UGPBYN&psc=1)
-- Lipo Charger [Amazon](https://www.amazon.com/gp/product/B01NB9A36R/ref=ox_sc_act_title_5?smid=AF5VK40LEGWAH&psc=1)
-- Lipo Battery [Amazon](https://www.amazon.com/gp/product/B0072AENKY/ref=ox_sc_act_title_3?smid=A3AR95NHANJAX6&psc=1)
-- An ATTiny programmer (Found [here](https://www.digikey.com/product-detail/en/sparkfun-electronics/PGM-11801/1568-1079-ND/5230948)) or an Arduino Uno (found [here](https://www.amazon.com/Elegoo-EL-CB-001-ATmega328P-ATMEGA16U2-Arduino/dp/B01EWOE0UU/ref=sr_1_9?keywords=arduino&qid=1563473233&s=gateway&sr=8-9))
+|Quantity|Ref Des       |Desc               |Part #                 |Manufacterer                   |Link                                                                                                            |
+|--------|--------------|-------------------|-----------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------|
+|1       |U1            |Attiny85-20SU      |Attiny85-20SU          |Atmel                          |[Digikey](https://www.digikey.com/product-detail/en/microchip-technology/ATTINY85-20SU/ATTINY85-20SU-ND/735470)            |
+|1       |Q1            |Solenoid Transistor|PBSS4250X,115          |NXP                            |[Digikey](https://www.digikey.com/product-detail/en/nexperia-usa-inc/PBSS4250X115/1727-5750-1-ND/2697143)                  |
+|1       |U2            |Voltage Reg        |AZ1117CH-5.0TRG1DICT-ND|Diodes Inc                     |[Digikey](https://www.digikey.com/product-detail/en/diodes-incorporated/AZ1117CH-5.0TRG1/AZ1117CH-5.0TRG1DICT-ND/4505207)  |
+|1       |D2            |Solenoid Diode     |MMSD4148T3GOSTR-ND     |ON Semi                        |[Digikey](https://www.digikey.com/product-detail/en/on-semiconductor/MMSD4148T3G/MMSD4148T3GOSCT-ND/1967161)               |
+|1       |C1            |Filter Cap         |EMK212BBJ106MGHT       |Taiyo Yuden                    |[Digikey](https://www.digikey.com/product-detail/en/taiyo-yuden/EMK212BBJ106MGHT/587-6311-1-ND/9949897)                    |
+|1       |D1            |Status LED         |LTST-C171GKT           |Lite-On Inc                    |[Digikey](https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C171GKT/160-1423-1-ND/386792)                         |
+|4       |R1, R2, R4, R5|Resistor           |RNCP0805FTD10K0        |Stackpole Electronics          |[Digikey](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RNCP0805FTD10K0/RNCP0805FTD10K0CT-ND/2240601)|
+|1       |R3            |Resistor           |CRG0805F2K7            |TE Connectivity Passive Product|[Digikey](https://www.digikey.com/product-detail/en/te-connectivity-passive-product/CRG0805F2K7/A126359CT-ND/7603414)      |
+|1       |R6            |Resistor           |RR1220P-102-D          |Susumu                         |[Digikey](https://www.digikey.com/product-detail/en/susumu/RR1220P-102-D/RR12P1.0KDCT-ND/432830)                           |
+|1       |C3            |MicroController Cap|CL21F104ZBCNNNC        |Samsung Electro-Mechanics      |[Digikey](https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21F104ZBCNNNC/1276-1007-1-ND/3889093)      |
+|1       |C2            |Filter Cap         |TMK212BBJ106KG-T       |Taiyo Yuden                    |[Digikey](https://www.digikey.com/product-detail/en/taiyo-yuden/TMK212BBJ106KG-T/587-2985-1-ND/2714178)                    |
+|1       |J2            |Fire Mode Switch   |SS-13D16-VG 4 PA       |C&K                            |[Digikey](https://www.digikey.com/product-detail/en/SS-13D16-VG+4+PA/CKN10371-ND/2747181)                                  |
+
 
 # Printing Parameters
 
