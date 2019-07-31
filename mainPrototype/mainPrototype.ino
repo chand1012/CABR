@@ -6,7 +6,8 @@
 #define AUTOMODE 2
 #define BURSTMODE 1
 #define SEMIMODE 0
-#define DELAY 100
+#define EDELAY 50
+#define RDELAY 75
 
 // The prototype has a slightly different MOSFET setup
 // Because of of this, the solenoid is active low.
@@ -18,9 +19,9 @@ byte firing;
 void fire() {
     digitalWrite(READY, LOW);
     digitalWrite(MOSFET, LOW);
-    delay(DELAY);
+    delay(EDELAY);
     digitalWrite(MOSFET, HIGH);
-    delay(DELAY);
+    delay(RDELAY);
     digitalWrite(READY, HIGH);
 }
 
