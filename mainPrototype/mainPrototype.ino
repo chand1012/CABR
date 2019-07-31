@@ -7,7 +7,7 @@
 #define BURSTMODE 1
 #define SEMIMODE 0
 #define EDELAY 50
-#define RDELAY 75
+#define RDELAY 125
 
 // The prototype has a slightly different MOSFET setup
 // Because of of this, the solenoid is active low.

@@ -6,7 +6,8 @@
 #define AUTOMODE 2
 #define BURSTMODE 1
 #define SEMIMODE 0
-#define DELAY 100
+#define EDELAY 50
+#define RDELAY 125
 
 unsigned int count;
 byte mode;
@@ -15,9 +16,9 @@ byte firing;
 void fire() {
     digitalWrite(READY, LOW);
     digitalWrite(MOSFET, HIGH);
-    delay(DELAY);
+    delay(EDELAY);
     digitalWrite(MOSFET, LOW);
-    delay(DELAY);
+    delay(RDELAY);
     digitalWrite(READY, HIGH);
 }
 
