@@ -7,7 +7,9 @@
 #define BURSTMODE 1
 #define SEMIMODE 0
 #define EDELAY 50
-#define RDELAY 125
+#define SDELAY 100
+#define ADELAY 175
+#define BDELAY 75
 
 // The prototype has a slightly different MOSFET setup
 // Because of of this, the solenoid is active low.
@@ -16,12 +18,12 @@ unsigned int count;
 byte mode;
 byte firing;
 
-void fire() {
+void fire(int waittime) {
     digitalWrite(READY, LOW);
     digitalWrite(MOSFET, LOW);
     delay(EDELAY);
     digitalWrite(MOSFET, HIGH);
-    delay(RDELAY);
+    delay(waittime);
     digitalWrite(READY, HIGH);
 }
 
@@ -49,18 +51,18 @@ void loop() {
         switch (mode) {
         case SEMIMODE:
             if (count==0) {
-                fire();
+                fire(SDELAY);
                 count++;
             }
             break;
         case BURSTMODE:
             if (count <= 2) {
-                fire();
+                fire(BDELAY);
                 count++;
             }
             break;
         case AUTOMODE:
-            fire();
+            fire(ADELAY);
             break;
         default:
             digitalWrite(MOSFET, LOW);

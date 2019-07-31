@@ -1,24 +1,26 @@
-#define READY 4
-#define TRIGGER 3
+#define READY 0
+#define TRIGGER 4
 #define BURST 1
 #define AUTO 2
-#define MOSFET 0
+#define MOSFET 3
 #define AUTOMODE 2
 #define BURSTMODE 1
 #define SEMIMODE 0
 #define EDELAY 50
-#define RDELAY 125
+#define SDELAY 100
+#define ADELAY 175
+#define BDELAY 75
 
 unsigned int count;
 byte mode;
 byte firing;
 
-void fire() {
+void fire(int waittime) {
     digitalWrite(READY, LOW);
     digitalWrite(MOSFET, HIGH);
     delay(EDELAY);
     digitalWrite(MOSFET, LOW);
-    delay(RDELAY);
+    delay(waittime);
     digitalWrite(READY, HIGH);
 }
 
@@ -45,18 +47,18 @@ void loop() {
         switch (mode) {
         case SEMIMODE:
             if (count==0) {
-                fire();
+                fire(SDELAY);
                 count++;
             }
             break;
         case BURSTMODE:
             if (count <= 2) {
-                fire();
+                fire(BDELAY);
                 count++;
             }
             break;
         case AUTOMODE:
-            fire();
+            fire(ADELAY);
             break;
         default:
             digitalWrite(MOSFET, LOW);
