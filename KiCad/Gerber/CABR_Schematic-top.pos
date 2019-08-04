@@ -1,0 +1,20 @@
+### Module positions - created on 7/25/2019 5:00:25 PM ###
+### Printed by Pcbnew version pcbnew (5.1.2)-2
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                        PosX       PosY       Rot  Side
+C1        10uF           C_0805_2012Metric          143.2560   -99.5680   90.0000  top
+C2        10uF           C_0805_2012Metric          155.1940   -97.7900  270.0000  top
+C3        0.1uF          C_0805_2012Metric          156.8450   -81.2800    0.0000  top
+D1        Green          LED_0805_2012Metric        142.2400   -91.3615   90.0000  top
+D2        MMSD4148T3G    D_SOD-123                  152.6540   -70.6120  180.0000  top
+Q1        PBSS4250X      SOT-89-3                   152.4000   -75.5650    0.0000  top
+R1        10k            R_0805_2012Metric          155.9075   -88.9000    0.0000  top
+R2        10k            R_0805_2012Metric          158.7500   -85.0900  270.0000  top
+R3        2.7k           R_0805_2012Metric          143.2560   -95.5040  270.0000  top
+R4        10k            R_0805_2012Metric          155.9560   -92.4560    0.0000  top
+R5        10k            R_0805_2012Metric          155.5750   -85.7250   90.0000  top
+R6        1k             R_0805_2012Metric          147.3200   -72.8980  180.0000  top
+U1        AZ1117-5.0     SOT-223-3_TabPin2          149.2250   -97.7900    0.0000  top
+U2        ATtiny85-20SU  SOIJ-8_5.3x5.3mm_P1.27mm   149.2250   -82.5500    0.0000  top
+## End
