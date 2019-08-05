@@ -3,7 +3,7 @@
 
 The CABR (Pronounced KAY-BER) is a 3D printed Nerf Computerized Adaptive Bullpup Rifle for full length darts.
 
-![CABR](https://raw.githubusercontent.com/chand1012/CABR/master/Images/MVIMG_20190804_205029_2.jpg)
+![CABR](https://raw.githubusercontent.com/chand1012/CABR/master/Images/CABRPrototype1.jpg)
 
 # Features
 
