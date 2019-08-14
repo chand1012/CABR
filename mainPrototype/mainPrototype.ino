@@ -19,12 +19,12 @@ byte mode;
 byte firing;
 
 void fire(int waittime) {
-    digitalWrite(READY, LOW);
+    digitalWrite(READY, HIGH);
     digitalWrite(MOSFET, LOW);
     delay(EDELAY);
     digitalWrite(MOSFET, HIGH);
     delay(waittime);
-    digitalWrite(READY, HIGH);
+    digitalWrite(READY, LOW);
 }
 
 void setup() {
@@ -34,7 +34,7 @@ void setup() {
     pinMode(BURST, INPUT);
     pinMode(AUTO, INPUT);
     digitalWrite(MOSFET, HIGH);
-    digitalWrite(READY, HIGH);
+    digitalWrite(READY, LOW);
 }
 
 void loop() {
