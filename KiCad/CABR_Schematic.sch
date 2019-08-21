@@ -90,11 +90,9 @@ $EndComp
 Wire Wire Line
 	7100 2450 7100 3150
 Wire Wire Line
-	7100 3900 7450 3900
-Wire Wire Line
 	6950 2400 6950 2750
 Wire Wire Line
-	6950 4000 7450 4000
+	6950 4000 7150 4000
 Wire Wire Line
 	6350 2750 6950 2750
 Connection ~ 6950 2750
@@ -105,8 +103,6 @@ Wire Wire Line
 Connection ~ 7100 3150
 Wire Wire Line
 	7100 3150 7100 3900
-Wire Wire Line
-	7450 4200 6750 4200
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5D304392
@@ -258,8 +254,6 @@ F 3 "~" H 5700 3950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 5700 3800
-Wire Wire Line
-	5700 3800 7400 3800
 $Comp
 L Diode:1N4148 D2
 U 1 1 5D2EE859
@@ -300,8 +294,6 @@ F 3 "" H 8050 4950 50  0001 C CNN
 	1    8050 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8050 4700 8050 4900
 $Comp
 L MCU_Microchip_ATtiny:ATtiny85-20SU U2
 U 1 1 5D378957
@@ -314,7 +306,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microc
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_ECB Q1
+L Device:Q_NPN_Darlington_BCE Q1
 U 1 1 5D37E1CE
 P 4850 3950
 F 0 "Q1" H 5041 3996 50  0000 L CNN
@@ -331,14 +323,10 @@ Wire Wire Line
 Wire Wire Line
 	5300 3800 5050 3800
 Wire Wire Line
-	5050 3800 5050 3950
-Wire Wire Line
 	4550 3500 4750 3500
 Wire Wire Line
 	4750 3500 4750 3750
 Connection ~ 4550 3500
-Wire Wire Line
-	4750 4150 5700 4150
 Connection ~ 5700 4150
 Wire Wire Line
 	5700 4150 5700 4200
@@ -387,59 +375,6 @@ $EndComp
 Connection ~ 5750 2000
 Wire Wire Line
 	5750 2000 6200 2000
-$Comp
-L Connector_Generic:Conn_02x03_Top_Bottom J3
-U 1 1 5D387500
-P 6950 4800
-F 0 "J3" H 7000 5117 50  0000 C CNN
-F 1 "Program Header" H 7000 5026 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6950 4800 50  0001 C CNN
-F 3 "~" H 6950 4800 50  0001 C CNN
-	1    6950 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 4700 7300 4700
-Wire Wire Line
-	7300 4700 7300 3500
-Wire Wire Line
-	7300 3500 7600 3500
-Wire Wire Line
-	7250 4900 8050 4900
-Connection ~ 8050 4900
-Wire Wire Line
-	8050 4900 8050 4950
-Wire Wire Line
-	6750 4900 6400 4900
-Wire Wire Line
-	6400 4900 6400 4300
-Wire Wire Line
-	6400 4300 7450 4300
-Wire Wire Line
-	7250 4800 7400 4800
-Wire Wire Line
-	7400 4800 7400 3800
-Connection ~ 7400 3800
-Wire Wire Line
-	7400 3800 7450 3800
-Wire Wire Line
-	7100 3900 7100 4450
-Wire Wire Line
-	7100 4450 6550 4450
-Wire Wire Line
-	6550 4450 6550 4700
-Wire Wire Line
-	6550 4700 6750 4700
-Connection ~ 7100 3900
-Wire Wire Line
-	6950 4000 6950 4400
-Wire Wire Line
-	6950 4400 6500 4400
-Wire Wire Line
-	6500 4400 6500 4800
-Wire Wire Line
-	6500 4800 6750 4800
-Connection ~ 6950 4000
 Wire Wire Line
 	6050 2750 6050 3150
 Connection ~ 6050 3150
@@ -491,9 +426,6 @@ NoConn ~ 4300 2900
 NoConn ~ 4300 3400
 Wire Wire Line
 	8050 3300 8050 3500
-Connection ~ 7600 3300
-Wire Wire Line
-	7600 3300 7600 3500
 Wire Wire Line
 	7600 3300 8050 3300
 $Comp
@@ -523,4 +455,76 @@ Wire Wire Line
 Connection ~ 8050 3300
 Wire Wire Line
 	8800 3300 9000 3300
+Wire Wire Line
+	5050 3800 5050 3950
+Wire Wire Line
+	4750 4150 5700 4150
+Wire Wire Line
+	5700 3800 7300 3800
+Wire Wire Line
+	8050 4700 8050 4850
+$Comp
+L Connector_Generic:Conn_02x03_Top_Bottom J3
+U 1 1 5D387500
+P 7200 4900
+F 0 "J3" H 7250 5217 50  0000 C CNN
+F 1 "Program Header" H 7250 5126 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7200 4900 50  0001 C CNN
+F 3 "~" H 7200 4900 50  0001 C CNN
+	1    7200 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3300 6900 3300
+Wire Wire Line
+	6900 3300 6900 4900
+Wire Wire Line
+	6900 4900 7000 4900
+Connection ~ 7600 3300
+Wire Wire Line
+	7000 5000 6750 5000
+Wire Wire Line
+	6750 5000 6750 4450
+Wire Wire Line
+	6750 4450 7150 4450
+Wire Wire Line
+	6750 4200 7450 4200
+Wire Wire Line
+	7150 4450 7150 4000
+Connection ~ 7150 4000
+Wire Wire Line
+	7150 4000 7450 4000
+Wire Wire Line
+	7500 4800 7500 4400
+Wire Wire Line
+	7500 4400 7300 4400
+Wire Wire Line
+	7300 4400 7300 3800
+Connection ~ 7300 3800
+Wire Wire Line
+	7300 3800 7450 3800
+Wire Wire Line
+	7500 4900 7700 4900
+Wire Wire Line
+	7700 4900 7700 4700
+Wire Wire Line
+	7700 4700 7450 4700
+Wire Wire Line
+	7450 4700 7450 4300
+Wire Wire Line
+	7500 5000 7850 5000
+Wire Wire Line
+	7850 5000 7850 4850
+Wire Wire Line
+	7850 4850 8050 4850
+Connection ~ 8050 4850
+Wire Wire Line
+	8050 4850 8050 4950
+Wire Wire Line
+	7000 4800 7000 3900
+Wire Wire Line
+	7000 3900 7100 3900
+Connection ~ 7100 3900
+Wire Wire Line
+	7100 3900 7450 3900
 $EndSCHEMATC
