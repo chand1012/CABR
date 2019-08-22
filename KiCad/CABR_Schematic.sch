@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:CABR_Schematic-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -311,7 +311,7 @@ U 1 1 5D37E1CE
 P 4850 3950
 F 0 "Q1" H 5041 3996 50  0000 L CNN
 F 1 "FQP30N06L" H 5041 3905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5050 4050 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5050 4050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PBSS4250X.pdf" H 4850 3950 50  0001 C CNN
 	1    4850 3950
 	-1   0    0    -1  
