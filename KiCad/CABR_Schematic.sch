@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:CABR_Schematic-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -150,8 +150,6 @@ F 3 "~" H 6100 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 2400 4550 2400
-Wire Wire Line
-	4550 2400 4550 2800
 Connection ~ 4800 2400
 Wire Wire Line
 	4800 2400 4800 1700
@@ -222,13 +220,13 @@ Connection ~ 5750 4200
 $Comp
 L Device:R_US R6
 U 1 1 5D38E3F6
-P 5450 3800
-F 0 "R6" V 5655 3800 50  0000 C CNN
-F 1 "1k" V 5564 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5490 3790 50  0001 C CNN
-F 3 "~" H 5450 3800 50  0001 C CNN
-	1    5450 3800
-	0    -1   -1   0   
+P 5250 3850
+F 0 "R6" V 5455 3850 50  0000 C CNN
+F 1 "1k" V 5364 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5290 3840 50  0001 C CNN
+F 3 "~" H 5250 3850 50  0001 C CNN
+	1    5250 3850
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5300 2000 5300 2900
@@ -321,8 +319,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 4200 5750 4200
 Wire Wire Line
-	5300 3800 5050 3800
-Wire Wire Line
 	4550 3500 4750 3500
 Wire Wire Line
 	4750 3500 4750 3750
@@ -400,8 +396,8 @@ $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5D3AE752
 P 4750 3150
-F 0 "J1" H 4830 3142 50  0000 L CNN
-F 1 "XT60" H 4830 3051 50  0000 L CNN
+F 0 "J1" H 4700 2950 50  0000 L CNN
+F 1 "XT60" H 4650 2850 50  0000 L CNN
 F 2 "XT60:XT60" H 4750 3150 50  0001 C CNN
 F 3 "~" H 4750 3150 50  0001 C CNN
 	1    4750 3150
@@ -455,8 +451,6 @@ Wire Wire Line
 Connection ~ 8050 3300
 Wire Wire Line
 	8800 3300 9000 3300
-Wire Wire Line
-	5050 3800 5050 3950
 Wire Wire Line
 	4750 4150 5700 4150
 Wire Wire Line
@@ -527,4 +521,14 @@ Wire Wire Line
 Connection ~ 7100 3900
 Wire Wire Line
 	7100 3900 7450 3900
+Wire Wire Line
+	5600 3800 5600 3850
+Wire Wire Line
+	5600 3850 5400 3850
+Wire Wire Line
+	4550 2400 4550 2800
+Wire Wire Line
+	5100 3850 5050 3850
+Wire Wire Line
+	5050 3850 5050 3950
 $EndSCHEMATC
