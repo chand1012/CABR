@@ -306,11 +306,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microc
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_Darlington_BCE Q1
+L Device:Q_NPN_Darlington_BEC Q1
 U 1 1 5D37E1CE
 P 4850 3950
 F 0 "Q1" H 5041 3996 50  0000 L CNN
-F 1 "PBSS4250X" H 5041 3905 50  0000 L CNN
+F 1 "FQP30N06L" H 5041 3905 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5050 4050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PBSS4250X.pdf" H 4850 3950 50  0001 C CNN
 	1    4850 3950

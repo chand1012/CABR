@@ -90,8 +90,6 @@ $EndComp
 Wire Wire Line
 	7100 2450 7100 3150
 Wire Wire Line
-	7100 3900 7450 3900
-Wire Wire Line
 	6950 2400 6950 2750
 Wire Wire Line
 	6950 4000 7150 4000
@@ -308,11 +306,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microc
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_Darlington_BCE Q1
+L Device:Q_NPN_Darlington_BEC Q1
 U 1 1 5D37E1CE
 P 4850 3950
 F 0 "Q1" H 5041 3996 50  0000 L CNN
-F 1 "PBSS4250X" H 5041 3905 50  0000 L CNN
+F 1 "FQP30N06L" H 5041 3905 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5050 4050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PBSS4250X.pdf" H 4850 3950 50  0001 C CNN
 	1    4850 3950
@@ -477,11 +475,6 @@ F 3 "~" H 7200 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 3900 7100 3900
-Connection ~ 7100 3900
-Wire Wire Line
-	7000 4800 7000 3900
-Wire Wire Line
 	7600 3300 6900 3300
 Wire Wire Line
 	6900 3300 6900 4900
@@ -527,4 +520,11 @@ Wire Wire Line
 Connection ~ 8050 4850
 Wire Wire Line
 	8050 4850 8050 4950
+Wire Wire Line
+	7000 4800 7000 3900
+Wire Wire Line
+	7000 3900 7100 3900
+Connection ~ 7100 3900
+Wire Wire Line
+	7100 3900 7450 3900
 $EndSCHEMATC
