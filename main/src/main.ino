@@ -58,8 +58,11 @@ void loop() {
             }
             break;
         case AUTOMODE:
-            fire(ADELAY);
-            break;
+            if (count <= 22){
+                fire(ADELAY);
+                count++;
+                break;
+            }
         default:
             digitalWrite(MOSFET, LOW);
             break;
